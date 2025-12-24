@@ -16,7 +16,7 @@ public class StockServer {
             GOOGLE
         }
 
-        public int GetStock(Stock stock) {
+        public synchronized int GetStock(Stock stock) {
             switch(stock) {
                 case MICROSOFT:
                     return microsoftValue;
